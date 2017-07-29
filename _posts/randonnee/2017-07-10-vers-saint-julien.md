@@ -1,13 +1,13 @@
 ---
-layout: post
 title: Vers Saint-Julien
+date: 2017-07-10 00:00:00 Z
+categories:
+- randonnee
+layout: post
 meta: Un premier super post pour voir un peu comment cette merde tourne
-date: 2017-07-10
 author: Bertrand
-category: randonnee
-first-image: /img/IMG_1218.jpg
+first-image: "/img/IMG_1218.jpg"
 ---
-
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 

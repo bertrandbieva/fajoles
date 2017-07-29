@@ -1,12 +1,13 @@
 ---
-layout: post
 title: Souper moules aux Fargues
-meta: Et finalement un troisième post qui déchire et qui lui aussi va se mettre dans la super loop des posts
-date: 2017-07-12
+date: 2017-07-12 00:00:00 Z
+categories:
+- valcadis
+layout: post
+meta: Et finalement un troisième post qui déchire et qui lui aussi va se mettre dans
+  la super loop des posts
 author: Nicolas
-category: valcadis
-first-image: /img/IMG_1225.jpg
-
+first-image: "/img/IMG_1225.jpg"
 ---
 
 Et finalement un troisième post qui est dans la catégorie Valcadis et dans lequel j'essaie d'insérer de multiples photos
