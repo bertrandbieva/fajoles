@@ -1,13 +1,11 @@
 ---
-title: Tournoi de pétanque
-date: 2017-07-16 00:00:00 Z
+title: Tournoi de petanque
+date: 2017-07-27
 categories:
 - la-plaine
 layout: post
 meta: Voici un second super article qui part dans la loop
-date: 2017-07-16
-author: Nicolas
-category: la-plaine
+author: Nathalie
 first-image: /img/IMG_1217.jpg
 ---
 
