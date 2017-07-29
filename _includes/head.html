@@ -1,0 +1,33 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>{% if page.title %} {{ page.title }} {% endif %}</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{% unless site.baseurl == "/" %} {{ site.baseurl }} {% endunless %}/css/owl.carousel.css">
+  <link rel="stylesheet" href="{% unless site.baseurl == "/" %} {{ site.baseurl }} {% endunless %}/css/bootstrap.min.css">
+  <link rel="stylesheet" href="{% unless site.baseurl == "/" %} {{ site.baseurl }} {% endunless %}/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{% unless site.baseurl == "/" %} {{ site.baseurl }} {% endunless %}/css/ionicons.min.css">
+  <link rel="stylesheet" href="{% unless site.baseurl == "/" %} {{ site.baseurl }} {% endunless %}/css/animate.css">
+  <link rel="stylesheet" href="{% unless site.baseurl == "/" %} {{ site.baseurl }} {% endunless %}/css/responsive.css">
+  <link rel="stylesheet" href="{% unless site.baseurl == "/" %} {{ site.baseurl }} {% endunless %}/css/style.css">
+
+  <!-- Js -->
+  <script src="{% unless site.baseurl == "/" %} {{ baseurl }} {% endunless %}/js/vendor/modernizr-2.6.2.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="{% unless site.baseurl == "/" %} {{ baseurl }} {% endunless %}/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+  <script src="{% unless site.baseurl == "/" %} {{ site.baseurl }} {% endunless %}/js/bootstrap.min.js"></script>
+  <script src="{% unless site.baseurl == "/" %} {{ site.baseurl }} {% endunless %}/js/owl.carousel.min.js"></script>
+  <script src="{% unless site.baseurl == "/" %} {{ site.baseurl }} {% endunless %}/js/min/waypoints.min.js"></script>
+  <script src="{% unless site.baseurl == "/" %} {{ site.baseurl }} {% endunless %}/js/jquery.counterup.js"></script>
+  <script src="{% unless site.baseurl == "/" %} {{ site.baseurl }} {% endunless %}/js/plugins.js"></script>
+
+  <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="js/google-map-init.js"></script>
+    
+  <script src="{% unless site.baseurl == "/" %} {{ site.baseurl }} {% endunless %}/js/main.js"></script>
+</head>
