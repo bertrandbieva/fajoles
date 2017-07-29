@@ -14,7 +14,7 @@ comments: true
         <h6 class="text-center">Posted on {{ page.date | date_to_string }} by {{ page.author }}</h6>
       </div>
 
-      <img class="post-img" src="{{ site.baseurl }}{{ page.first-image }}">
+      <img class="post-img" src="{{ page.first-image }}">
       {{ content }}
       {% if site.disqus.shortname %}
         {% include disqus_comments.html %}
