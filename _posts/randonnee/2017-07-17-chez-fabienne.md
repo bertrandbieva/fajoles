@@ -5,7 +5,7 @@ meta: Un premier super post pour voir un peu comment cette merde tourne
 date: 2017-07-17
 author: Bertrand
 category: randonnee
-first-image: img/IMG_1224.jpg
+first-image: /img/IMG_1224.jpg
 ---
 
 

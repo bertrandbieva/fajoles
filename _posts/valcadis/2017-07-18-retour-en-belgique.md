@@ -5,7 +5,7 @@ meta: Et finalement un troisième post qui déchire et qui lui aussi va se mettr
 date: 2017-07-18
 author: Nicolas
 category: valcadis
-first-image: img/IMG_1227.jpg
+first-image: /img/IMG_1227.jpg
 ---
 Et on s'éclate au marché de Fajoles le dimanche matin.
 <!--more-->

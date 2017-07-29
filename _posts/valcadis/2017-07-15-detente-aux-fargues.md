@@ -5,7 +5,7 @@ meta: Et finalement un troisième post qui déchire et qui lui aussi va se mettr
 date: 2017-07-15
 author: Nicolas
 category: valcadis
-first-image: img/IMG_1226.jpg
+first-image: /img/IMG_1226.jpg
 ---
 Des moments de détente aux Fragues avnat de rentrer vers la Belgique ce soir.
 <!--more-->
