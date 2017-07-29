@@ -5,7 +5,7 @@ meta: Voici un second super article qui part dans la loop
 date: 2017-07-16
 author: Nathalie
 category: la-plaine
-first-image: img/IMG_1217.jpg
+first-image: /img/IMG_1217.jpg
 ---
 
 
