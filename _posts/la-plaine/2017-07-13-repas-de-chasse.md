@@ -3,7 +3,7 @@ layout: post
 title: Repas de Chasse
 meta: Voici un second super article qui part dans la loop
 date: 2017-07-13
-author: Nathalie
+author: Bertrand
 category: la-plaine
 first-image: /img/IMG_1216.jpg
 ---
