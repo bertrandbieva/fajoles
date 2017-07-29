@@ -1,12 +1,15 @@
 ---
-layout: post
 title: Détente aux Fargues
-meta: Et finalement un troisième post qui déchire et qui lui aussi va se mettre dans la super loop des posts
-date: 2017-07-15
+date: 2017-07-15 00:00:00 Z
+categories:
+- valcadis
+layout: post
+meta: Et finalement un troisième post qui déchire et qui lui aussi va se mettre dans
+  la super loop des posts
 author: Nicolas
-category: valcadis
-first-image: /img/IMG_1226.jpg
+first-image: "/img/IMG_1226.jpg"
 ---
+
 Des moments de détente aux Fragues avnat de rentrer vers la Belgique ce soir.
 <!--more-->
 
