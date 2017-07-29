@@ -1,217 +1,23 @@
-<!DOCTYPE html>
-<html class="no-js">
-
-  <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title> La Plaine </title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="  /css/owl.carousel.css">
-  <link rel="stylesheet" href="  /css/bootstrap.min.css">
-  <link rel="stylesheet" href="  /css/font-awesome.min.css">
-  <link rel="stylesheet" href="  /css/ionicons.min.css">
-  <link rel="stylesheet" href="  /css/animate.css">
-  <link rel="stylesheet" href="  /css/responsive.css">
-  <link rel="stylesheet" href="  /css/style.css">
-
-  <!-- Js -->
-  <script src="  /js/vendor/modernizr-2.6.2.min.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="  /js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-  <script src="  /js/bootstrap.min.js"></script>
-  <script src="  /js/owl.carousel.min.js"></script>
-  <script src="  /js/min/waypoints.min.js"></script>
-  <script src="  /js/jquery.counterup.js"></script>
-  <script src="  /js/plugins.js"></script>
-
-  <!-- Google Map -->
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
-    <script src="js/google-map-init.js"></script>
-    
-  <script src="  /js/main.js"></script>
-</head>
+---
+layout: blog
+title: La Plaine
+---
 
 
-
-
-  <body>
-
-
-    <!-- Header Start -->
-<header>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <!-- header Nav Start -->
-                <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="/">
-          <img src="/img/logo2.png" alt="Logo">
-      </a>
-    </div>
-
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a class="" href="/">Blog</a></li>
-
-<!-- <li><a class="current" href="/blog.html">Blog</a></li> -->
-<li><a class="" href="/about.html">A propos</a></li>
-<li><a class="" href="https://fr-fr.facebook.com/Ceux-qui-adorent-Fajoles-46300-38727777373/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-
-
-      </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-
-            </div>
-        </div>
-    </div>
-</header><!-- header close -->
-
-    <!-- Slider Start -->
-<section id="global-header">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="block">
-                    <h1>Ceux qui adorent Fajoles</h1>
-                    <p>Suivez l'actu du coin !</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-    <section id="portfolio-work">
-        <div class="container">
-            <div class="row">
-              <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2">
-
-                <div class="block">
-                  <div class="portfolio-menu">
-                    <ul>
-                      <li class="filter"><a class="" href="/">Tous</a></li>
-                      <li class="filter"><a class="current" href="/la-plaine.html">La Plaine</a></li>
-                      <li class="filter"><a class="" href="/randonnee.html">Randonnées</a></li>
-                      <li class="filter"><a class="" href="/valcadis.html">Valcadis</a></li>
-                    </ul>
-                  </div>
-                </div>
-
-
-                <!-- Blog Post -->
+<!-- Blog Post -->
 <ul class="posts">
-  
+  {% for post in site.categories.la-plaine %}
 
-    <h2 class="text-center"><a href=" /la-plaine/2017/07/16/tournoi-de-petanque.html">Tournoi de pétanque</a></h2>
+    <h2 class="text-center"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
 
-    <p class="lead text-center">by Nathalie</p>
-    <p class="text-center"><i class="fa fa-calendar-o" aria-hidden="true"></i> Posted on 16 Jul 2017</p>
-    <!-- <p class="text-center">Voici un second super article qui part dans la loop</p> -->
-    <a href="/la-plaine/2017/07/16/tournoi-de-petanque.html"><img class="post-img" src="img/IMG_1217.jpg"></a>
+    <p class="lead text-center">by {{ post.author }}</p>
+    <p class="text-center"><i class="fa fa-calendar-o" aria-hidden="true"></i> Posted on {{ post.date | date_to_string }}</p>
+    <!-- <p class="text-center">{{ post.meta }}</p> -->
+    <a href="{{ site.baseurl }}{{ post.url }}"><img class="post-img" src="{{ post.first-image }}"></a>
 
-    <!-- <p>Voici un second super article qui part dans la loop</p> -->
-
-    <!-- <a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a> -->
-    <hr>
-  
-
-    <h2 class="text-center"><a href=" /la-plaine/2017/07/13/repas-de-chasse.html">Repas de Chasse</a></h2>
-
-    <p class="lead text-center">by Nathalie</p>
-    <p class="text-center"><i class="fa fa-calendar-o" aria-hidden="true"></i> Posted on 13 Jul 2017</p>
-    <!-- <p class="text-center">Voici un second super article qui part dans la loop</p> -->
-    <a href="/la-plaine/2017/07/13/repas-de-chasse.html"><img class="post-img" src="img/IMG_1216.jpg"></a>
-
-    <!-- <p>Voici un second super article qui part dans la loop</p> -->
+    <!-- <p>{{ post.meta }}</p> -->
 
     <!-- <a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a> -->
     <hr>
-  
-
-    <h2 class="text-center"><a href=" /la-plaine/2017/07/11/journee-coiffure.html">Journée coiffure</a></h2>
-
-    <p class="lead text-center">by Nathalie</p>
-    <p class="text-center"><i class="fa fa-calendar-o" aria-hidden="true"></i> Posted on 11 Jul 2017</p>
-    <!-- <p class="text-center">Voici un second super article qui part dans la loop</p> -->
-    <a href="/la-plaine/2017/07/11/journee-coiffure.html"><img class="post-img" src="img/IMG_1215.jpg"></a>
-
-    <!-- <p>Voici un second super article qui part dans la loop</p> -->
-
-    <!-- <a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a> -->
-    <hr>
-  
+  {% endfor %}
 </ul>
-
-
-                
-
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Call to action Start -->
-<section id="call-to-action">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="block">
-          <h2>Suivez-nous !</h2>
-          <!-- <p>Read more about what we do and our philosophy of design. Judge for yourself The work and results we’ve achieved for other clients, and meet our highly experienced Team who just love to design.</p> -->
-          <a class="" href="https://fr-fr.facebook.com/Ceux-qui-adorent-Fajoles-46300-38727777373/" ><i class="fa fa-5x fa-facebook facebook-link" aria-hidden="true"></i></a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-    <footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-              <div class="footer-manu">
-                <ul>
-                  <li><a class="" href="/">Blog</a></li>
-
-<!-- <li><a class="current" href="/blog.html">Blog</a></li> -->
-<li><a class="" href="/about.html">A propos</a></li>
-<li><a class="" href="https://fr-fr.facebook.com/Ceux-qui-adorent-Fajoles-46300-38727777373/"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-
-
-                </ul>
-              </div>
-              <p>Fait avec <i class="fa fa-heart fa-love" aria-hidden="true"></i> et nostalgie par <a href="http://www.bievab.be">Bertrand</a> avec l'aide de <img class="jekyll" src="/img/jekyll.png">  et  <img class="bootstrap" src="/img/bootstrap.png"></p>
-            </div>
-        </div>
-    </div>
-</footer>
-
-
-
-
-<script>
-document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>');
-function goBack() {
-    window.history.back();
-};
-</script>
-
-    </body>
-</html>
