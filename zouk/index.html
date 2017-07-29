@@ -1,0 +1,23 @@
+---
+layout: blog
+title: Fajoles
+---
+
+
+<!-- Blog Post -->
+<ul class="posts">
+  {% for post in site.posts %}
+
+    <h2 class="text-center"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+
+    <p class="lead text-center">by {{ post.author }}</p>
+    <p class="text-center"><i class="fa fa-calendar-o" aria-hidden="true"></i> Posted on {{ post.date | date_to_string }}</p>
+    <!-- <p class="text-center">{{ post.meta }}</p> -->
+    <a href="{{ site.baseurl }}{{ post.url }}"><img class="post-img" src="{{ post.first-image }}"></a>
+
+    <!-- <p>{{ post.meta }}</p> -->
+
+    <!-- <a class="btn btn-primary" href="#">Read More <span class="glyphicon glyphicon-chevron-right"></span></a> -->
+    <hr>
+  {% endfor %}
+</ul>
