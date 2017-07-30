@@ -6,8 +6,8 @@
     {% assign postMonth = post.date  | date: "%B" %}
 
     {% if forloop.first %}
-    <li> {{ postYear}}
-        <ul>
+    <li id="year"> {{ postYear}}
+        <ul id="articles">
             <li> {{ postMonth }}
                 <ul>
     {% endif %}
@@ -34,3 +34,10 @@
     {% assign currentYear = postYear %}
     {% assign currentMonth = postMonth %}
 {% endfor %}
+<script>
+$(document).ready(function(){
+    $("#year").click(function(){
+        $("articles").toggle();
+    });
+});
+</script>
