@@ -1,6 +1,6 @@
 ---
 title: Journée coiffure
-date: 2017-07-11 00:00:00 Z
+date: 2016-05-12
 categories:
 - la-plaine
 layout: post
