@@ -4,32 +4,7 @@
 
     {% assign postYear = post.date | date: "%Y" %}
     {% assign postMonth = post.date  | date: "%B" %}
-    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-      {% if forloop.first %}
-      <div class="panel panel-default">
-        <div class="panel-heading" role="tab" id="headingOne">
-          <h4 class="panel-title">
-            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-              {{ postYear}}
-            </a>
-          </h4>
-        </div>
-        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-          <div class="panel-body">
-            <ul>
-              <li>{{ postMonth }}
-                  <ul>
-                    {% if (postYear == currentYear and postMonth == currentMonth) or forloop.first %}
-                        <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
-                    {% endif %}
-                  </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      {% endif %}
-    </div>
+
     {% if forloop.first %}
     <li> {{ postYear}}
         <ul>
